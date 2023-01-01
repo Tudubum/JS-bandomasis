@@ -5,8 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>1 uzduotis</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  
+  <form id="temperature-form">
+    <label for="temperature">Temperatūros reikšmė:</label><br>
+    <input type="text" id="temperature" name="temperature" placeholder="Įrašykite reikšmę"><br>
+    <label for="unit">Matavimo vienetas:</label><br>
+    <select id="unit" name="unit">
+      <option value="C">Celcius</option>
+      <option value="F">Farenheit</option>
+    </select><br>
+    <button type="submit">Konvertuoti</button>
+    <div type="text" id="converted-temperature"></div>
+  </form>
 </body>
 </html>

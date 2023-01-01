@@ -13,3 +13,18 @@ const asmenys = [
   { id: '6', name: 'Kamilė', masina: "BMW", masinosGamybosMetai: 1999 },
   { id: '7', name: 'Aloyzas', masina: "Honda", masinosGamybosMetai: 2010 }
 ];
+
+
+function skaiciuojamVidurki (asmenys) {
+  let suma = 0; // sis uzrasas naudojamas norint pradeti sumuoti funckijos rezulta
+  // sukam cikla per masyva
+  for(let i = 0; i < asmenys.length; i++){
+    // su kiekvienu ciklu sumuojame gamybos metus
+    suma += asmenys[i].masinosGamybosMetai;
+  }
+
+  // gauta sumos rezultata daliname is masinu masyvo ilgio
+  return suma/asmenys.length;
+}
+
+console.log(skaiciuojamVidurki(asmenys));

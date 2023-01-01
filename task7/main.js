@@ -11,3 +11,10 @@ const asmuo = {
   lytis : "vyras",
   vedes : false
 }
+
+function raktazodziuMasyvas(asmuo){
+  return Object.keys(asmuo)
+}
+
+const paverstasMasyvas = raktazodziuMasyvas(asmuo);
+console.log(paverstasMasyvas)

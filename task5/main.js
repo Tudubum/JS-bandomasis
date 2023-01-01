@@ -14,3 +14,12 @@ const asmenys = [
   { id: '6', name: 'Kamilė', turiMasina: true },
   { id: '7', name: 'Aloyzas', turiMasina: true }
 ];
+
+ 
+function filtruojame (asmenys) {
+  return asmenys.filter(asmenys => asmenys.turiMasina === true)
+
+}
+
+const asmuoTuriMasina = filtruojame(asmenys)
+console.log(asmuoTuriMasina);
