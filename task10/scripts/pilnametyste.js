@@ -1,4 +1,6 @@
-function pilnametyste(asmuo){
+
+
+export function pilnametyste(asmuo){
   if(asmuo.amzius >= 18){
     return true;
   } else {
