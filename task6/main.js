@@ -28,3 +28,5 @@ function skaiciuojamVidurki (asmenys) {
 }
 
 console.log(skaiciuojamVidurki(asmenys));
+
+
